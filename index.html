@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="WebPulse Uniontesters is a cloud-based QA testing engine that simulates real user journeys with controlled, rule-based browser agents."
+    />
+    <title>WebPulse Uniontesters | Cloud QA Browser Agents</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="WebPulse Uniontesters home">
+          <span class="brand-mark">WP</span>
+          <span>WebPulse Uniontesters</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#architecture">Architecture</a>
+          <a href="#bots">Bots</a>
+          <a href="#otp">OTP</a>
+          <a href="#reports">Reports</a>
+          <a class="nav-cta" href="#cycle">Start test cycle</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">Cloud QA automation • Rule-based browser agents</p>
+          <h1>Test websites with controlled human-like user journeys.</h1>
+          <p class="hero-text">
+            WebPulse simulates realistic visitors, readers, shoppers, signup testers, and lead users so
+            teams can validate critical flows, detect bugs, measure performance, and keep websites stable.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#architecture">Explore the platform</a>
+            <a class="button secondary" href="#safety">View safety boundaries</a>
+          </div>
+          <div class="trust-strip" aria-label="Core WebPulse capabilities">
+            <span>Signup/login QA</span>
+            <span>Captcha issue checks</span>
+            <span>Cloud scheduling</span>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Live test simulation example">
+          <div class="card-header">
+            <span class="status-dot"></span>
+            <span>Bot #12 session</span>
+          </div>
+          <ol class="timeline">
+            <li><strong>00:00</strong> Opens authorized target site</li>
+            <li><strong>00:20</strong> Reads homepage content</li>
+            <li><strong>01:04</strong> Scrolls page naturally</li>
+            <li><strong>01:22</strong> Clicks menu</li>
+            <li><strong>02:07</strong> Opens product page</li>
+            <li><strong>02:52</strong> Leaves session</li>
+          </ol>
+        </aside>
+      </section>
+
+      <section class="value-grid section-shell" aria-label="Core value summary">
+        <article>
+          <span class="icon">🧪</span>
+          <h2>Automated website testing</h2>
+          <p>Run repeatable browser sessions that validate pages, links, forms, signup paths, checkout starts, and lead funnels.</p>
+        </article>
+        <article>
+          <span class="icon">📈</span>
+          <h2>Performance and flow insight</h2>
+          <p>Collect page load time, response delay, navigation speed, drop-off points, server errors, and failed form details.</p>
+        </article>
+        <article>
+          <span class="icon">☁️</span>
+          <h2>Continuous cloud execution</h2>
+          <p>Schedule tests in the cloud while your phone or laptop acts only as a control panel and can be offline.</p>
+        </article>
+      </section>
+
+      <section class="section-shell split" id="architecture">
+        <div>
+          <p class="eyebrow">System architecture</p>
+          <h2>From dashboard command to actionable report.</h2>
+          <p>
+            WebPulse turns a user-controlled test plan into scheduled browser automation and structured QA output.
+            The bot engine can be configured for the amount of agents a deployment needs, including large fleets of
+            rule-based workers.
+          </p>
+        </div>
+        <div class="architecture-flow" aria-label="WebPulse system architecture">
+          <span>Dashboard</span>
+          <span>API Server</span>
+          <span>Scheduler</span>
+          <span>Bot Engine</span>
+          <span>Playwright Layer</span>
+          <span>Target Website</span>
+          <span>Result Collector</span>
+        </div>
+      </section>
+
+      <section class="section-shell" id="bots">
+        <div class="section-heading">
+          <p class="eyebrow">Rule-based bot system</p>
+          <h2>Scripted behavior machines, not AI traffic generators.</h2>
+          <p>
+            Each controlled union agent follows predefined rules with randomized timing. They are built for QA coverage,
+            not public traffic manipulation or analytics inflation.
+          </p>
+        </div>
+        <div class="bot-grid">
+          <article class="bot-card"><span>🧍</span><h3>Visitor Bots</h3><p>Open the homepage, scroll, click safe site links, and leave.</p></article>
+          <article class="bot-card"><span>📖</span><h3>Reader Bots</h3><p>Read blog pages, scroll slowly, and open articles for content journey testing.</p></article>
+          <article class="bot-card"><span>🛒</span><h3>Shopper Bots</h3><p>Browse products, add to cart, and start checkout validation.</p></article>
+          <article class="bot-card"><span>📝</span><h3>Signup Bots</h3><p>Fill registration forms, submit test data, and handle OTP verification flows.</p></article>
+          <article class="bot-card"><span>📨</span><h3>Lead Bots</h3><p>Visit pricing pages, open contact forms, and submit approved test leads.</p></article>
+        </div>
+      </section>
+
+      <section class="section-shell device-section">
+        <div>
+          <p class="eyebrow">Device simulation</p>
+          <h2>Cover mobile, desktop, Mac, and Linux experiences.</h2>
+          <p>Each bot session can vary screen size, browser profile, scrolling style, and timing behavior.</p>
+        </div>
+        <div class="device-bars" aria-label="Device simulation distribution">
+          <div><span>Android phone</span><strong>25%</strong><meter min="0" max="100" value="25">25%</meter></div>
+          <div><span>iPhone</span><strong>25%</strong><meter min="0" max="100" value="25">25%</meter></div>
+          <div><span>Desktop</span><strong>20%</strong><meter min="0" max="100" value="20">20%</meter></div>
+          <div><span>Mac</span><strong>20%</strong><meter min="0" max="100" value="20">20%</meter></div>
+          <div><span>Linux</span><strong>10%</strong><meter min="0" max="100" value="10">10%</meter></div>
+        </div>
+      </section>
+
+      <section class="section-shell split dark-panel" id="otp">
+        <div>
+          <p class="eyebrow">Email + OTP system</p>
+          <h2>Validate signup verification automatically.</h2>
+          <p>
+            Signup bots use controlled test inboxes such as <code>bot001@test.internal</code>. OTP codes are captured,
+            extracted, scoped to the matching bot session, injected into the flow, and expired after completion.
+          </p>
+        </div>
+        <ol class="steps">
+          <li>Bot signs up with approved test data.</li>
+          <li>Backend sends email with OTP.</li>
+          <li>Test inbox captures the message.</li>
+          <li>OTP is extracted and entered.</li>
+          <li>Account creation is confirmed.</li>
+        </ol>
+      </section>
+
+      <section class="section-shell" id="reports">
+        <div class="section-heading">
+          <p class="eyebrow">Structured reports</p>
+          <h2>Every session becomes measurable QA evidence.</h2>
+        </div>
+        <div class="report-grid">
+          <article><h3>Performance Data</h3><ul><li>Page load time</li><li>Response delay</li><li>Navigation speed</li></ul></article>
+          <article><h3>Error Data</h3><ul><li>Broken links</li><li>Failed forms</li><li>Server errors</li></ul></article>
+          <article><h3>User Flow Data</h3><ul><li>Drop-off points</li><li>Pages visited</li><li>Session duration</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section-shell cycle" id="cycle">
+        <p class="eyebrow">Cloud test cycle</p>
+        <h2>Start, assign, run, collect, report, repeat.</h2>
+        <div class="cycle-track">
+          <span>Start test</span>
+          <span>Assign bots</span>
+          <span>Run sessions</span>
+          <span>Collect logs</span>
+          <span>Generate report</span>
+          <span>Stop or repeat</span>
+        </div>
+      </section>
+
+      <section class="section-shell scaling-safety" id="safety">
+        <div class="scaling-card">
+          <p class="eyebrow">Scaling model</p>
+          <h2>Grow from manual QA runs to advanced reporting.</h2>
+          <ul>
+            <li><strong>Start:</strong> configurable bot amount, basic flows, manual trigger.</li>
+            <li><strong>Growth:</strong> larger bot pool, scheduling system, email OTP system.</li>
+            <li><strong>Advanced:</strong> advanced reporting and multi-device simulation.</li>
+          </ul>
+        </div>
+        <div class="safety-card">
+          <p class="eyebrow">What this is not</p>
+          <h2>Built only for authorized quality assurance.</h2>
+          <ul>
+            <li>Not a hacking tool.</li>
+            <li>Not a traffic inflator.</li>
+            <li>Not for fake analytics.</li>
+            <li>Not for bypassing security systems.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="section-shell footer-inner">
+        <div>
+          <strong>WebPulse Uniontesters</strong>
+          <p>A cloud-based automated QA testing engine using rule-based browser agents.</p>
+        </div>
+        <a class="button secondary" href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
